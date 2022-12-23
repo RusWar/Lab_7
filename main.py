@@ -10,7 +10,8 @@ cursor = conn.cursor()
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Бот с информацией о расписании БИН2210.\n\nСписок команд:\n/menu -- выбрать неделю или день недели\n/week -- показать тип текущей недели\n/help -- вывод этого меню\n/mtuci -- ссылка на официальный сайт МТУСИ\n')
+    bot.send_message(message.chat.id, 'Бот с информацией о расписании БИН2210.\n\nСписок команд:\n/menu -- выбрать неделю или день недели\n/week -- показать тип текущей недели\n/help -- вывод этого меню\n/mtuci -- ссылка на официальный сайт МТУСИ\n'
+                                      '\nИ да, я Райн Гослинг из художественного фильма "Драйв"\n')
 
 
 @bot.message_handler(commands=['menu'])
